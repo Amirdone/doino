@@ -3,8 +3,6 @@
 import * as React from "react"
 import { format } from "date-fns"
 import { Calendar as CalendarIcon } from "lucide-react"
-
-import { cn } from "@/lib/utils"
 import {
   Popover,
   PopoverContent,
@@ -175,6 +173,7 @@ import Navbar from "@/components/navbar";
 export default function Home() {
   return (
     <div className="container" >
+      
       <Navbar />
       <Button variant="link">Button</Button>
       <Calendar />

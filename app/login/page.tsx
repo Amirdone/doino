@@ -1,5 +1,5 @@
 "use client";
-
+import Image from 'next/image'
 import {
   Card,
   CardContent,
@@ -7,10 +7,10 @@ import {
   CardFooter,
   CardHeader,
   CardTitle,
-} from "@/components/ui/card";
+} 
+from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
@@ -23,12 +23,13 @@ import {
   FormLabel,
   FormMessage,
 } from "@/components/ui/form";
+import doino from "@/public/doino.svg"
 
 const formSchema = z.object({
   username: z.string().min(2, {
     message: "لطفا این قسمت را خالی نگذارید.",
   }),
-});
+}); 
 
 export default function ProfileForm() {
   // 1. Define your form.
@@ -46,10 +47,16 @@ export default function ProfileForm() {
     console.log(values);
   }
   return (
-    <div className="flex  min-h-screen justify-center items-center ">
+    <div className="flex  min-h-screen justify-center items-center p-20 ">
       <Card className="p-5 m-5">
+      <Image className='items-center flex'
+      src={doino}
+      width={100}
+      height={100}
+      alt="doino"
+    />
         <CardHeader>
-          <CardTitle> ورود | عضویت</CardTitle>
+          <CardTitle className=""> ورود | عضویت</CardTitle>
         </CardHeader>
         <Form {...form}>
           <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
@@ -58,7 +65,7 @@ export default function ProfileForm() {
               name="username"
               render={({ field }) => (
                 <FormItem>
-                  <FormDescription>
+                  <FormDescription className="p-2 m-2">
                     لطفا شماره موبایل یا ایمیل خود را وارد کنید
                   </FormDescription>
                   <FormControl>
