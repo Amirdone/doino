@@ -1,5 +1,5 @@
 "use client"
-
+import Footer from "@/components/footer"
 import * as React from "react"
 import { format } from "date-fns"
 import { Calendar as CalendarIcon } from "lucide-react"
@@ -111,7 +111,7 @@ import {
 } from "@/components/ui/carousel";
 
 import {
-  //Breadcrumb,
+
   BreadcrumbItem,
   BreadcrumbLink,
   BreadcrumbList,
@@ -172,9 +172,16 @@ import { Button } from "@/components/ui/button";
 import Navbar from "@/components/navbar";
 export default function Home() {
   return (
-    <div className="container" >
-      
+  <div className=" bg-slate-100 " >
+      <div>
       <Navbar />
+      
+      </div>
+    <div className="">
+      <div className="pt-24">
+      <Alert>
+        <AlertTitle>Heads up!</AlertTitle>
+        <AlertDescription>
       <Button variant="link">Button</Button>
       <Calendar />
       <Breadcrumb />
@@ -186,10 +193,6 @@ export default function Home() {
           </AccordionContent>
         </AccordionItem>
       </Accordion>
-
-      <Alert>
-        <AlertTitle>Heads up!</AlertTitle>
-        <AlertDescription>
           You can add components and dependencies to your app using the cli.
         </AlertDescription>
       </Alert>
@@ -209,6 +212,8 @@ export default function Home() {
           </AlertDialogFooter>
         </AlertDialogContent>
       </AlertDialog>
+      
+      </div>
       <div className="w-[450px]">
         <AspectRatio ratio={16 / 9}></AspectRatio>
         <Avatar>
@@ -391,10 +396,8 @@ export default function Home() {
   <ResizableHandle />
   <ResizablePanel>Two</ResizablePanel>
 </ResizablePanelGroup>
-
-
-
-
-    </div>
+   </div>
+   <Footer/>
+ </div>
   );
 }
