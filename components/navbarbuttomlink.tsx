@@ -7,7 +7,7 @@ const Navbarbuttomlink = () => {
         href={"/login"}
         className="ml-5 text-l border border-slate-400 px-6 py-1 rounded-md  hover:bg-slate-500 bg-green-500 text-white"
       >
-        ورود
+      ورود | عضویت
       </Link>
     </div>
   );

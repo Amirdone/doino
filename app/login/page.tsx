@@ -75,7 +75,7 @@ export default function ProfileForm() {
                 </FormItem>
               )}
             />
-            <Button className="w-full m-0 bg-green-500 " variant="outline" type="submit">
+            <Button className="w-full m-0 bg-green-500 text-white " variant="outline" type="submit">
             ورود
             </Button>
             <p>

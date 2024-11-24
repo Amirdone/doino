@@ -1,18 +1,21 @@
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-
+import Image from "next/image";
+import doino from "@/public/doino.svg";
 export default function Footer() {
   return (
     <footer className="bg-gray-900 text-white py-10">
       <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
         <div>
-          <h2 className="text-2xl font-bold mb-4">لوگو</h2>
-          <p className="text-gray-400">
-        سوسیس
-          </p>
+          <Image
+            className="items-center flex"
+            src={doino}
+            width={100}
+            height={100}
+            alt="doino"
+          />
+          <p className="text-gray-400">سوسیس</p>
         </div>
-
-        {/* بخش دوم: لینک‌ها */}
         <div>
           <h3 className="text-xl font-bold mb-4">لینک‌های سریع</h3>
           <ul className="space-y-2">
