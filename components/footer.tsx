@@ -42,7 +42,7 @@ export default function Footer() {
             <li className="text-gray-400">شماره تلفن:</li>
             <li className="text-gray-400">ایمیل: </li>
           </ul>
-          <Button className="mt-4 bg-green-500 text-white hover:bg-green-600">
+          <Button className="mt-4 bg-green-700 text-white hover:bg-green-700">
             ارسال پیام
           </Button>
         </div>
