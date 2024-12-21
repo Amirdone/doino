@@ -31,7 +31,7 @@ const LandingSectionKanban = () => {
           </ul>
           <div className="mt-8">
             <Link
-              href="/signup"
+              href="/kanvan"
               className="inline-block bg-green-600 hover:bg-green-700 text-white font-semibold py-3 px-6 rounded-md shadow-md"
             >
               شروع کنید
@@ -53,4 +53,3 @@ const LandingSectionKanban = () => {
 };
 
 export default LandingSectionKanban;
-
