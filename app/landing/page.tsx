@@ -160,8 +160,8 @@ function LandingPage() {
                   سلام {mutation.data.data?.firstName} 😍
                 </div>
                 <p className='text-sm'>
-                  به خانواده ریوتو خوش‌آمدید ✌🏻🌹 به زودی برای اطلاعات بیشتر با شما تماس میگیریم. در
-                  این حین میتوانید در اینستاگرام ما را دنبال کنید 🙏🏻
+                  به دویینو خوش‌آمدید 💚 به زودی برای اطلاعات بیشتر با شما تماس میگیریم.
+                
                 </p>
                 <Button
                   variant={'outline'}
@@ -172,11 +172,11 @@ function LandingPage() {
                   asChild
                 >
                   <Link
-                    href={'https://www.instagram.com/riveto_ir'}
+                    href={'#'}
                     className='px-4 font-bold py-2 flex items-center gap-1'
                   >
                     <Instagram className='h-5 w-auto' />
-                    اینستاگرام ریوِتو
+                    اینستاگرام دویینو
                   </Link>
                 </Button>
               </div>
@@ -184,9 +184,9 @@ function LandingPage() {
           </div>
           <div className='my-10'>
             <div className='flex items-center gap-6 justify-center font-light text-sm text-zinc-500'>
-              <Link href={'/blog'}>بلاگ</Link>
+              <Link href={'#'}>بلاگ</Link>
               <span className='text-slate-100/10'>|</span>
-              <Link href={'tel:09172929041'}>تماس‌باما</Link>
+              <Link href={'tel:09034025194'}>تماس‌باما</Link>
             </div>
             <p className='mt-3 text-xs text-center text-zinc-400'>
               ساخته شده با 💚 در دویینو ۱۴۰۳
